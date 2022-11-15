@@ -29,7 +29,7 @@ public class P21MergeTwoLists {
         return result.next;
     }
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         public ListNode next;
         ListNode() {}

@@ -16,8 +16,8 @@ public class Main {
         ExecutorService service = Executors.newFixedThreadPool(1);
         service.execute(getRunnable(executor, 10));
         service.execute(getRunnable(executor, 11));
-        service.close();
-//        executor.close();
+        service.shutdown();
+//        executor.shutdown();
     }
 
     public static Runnable getRunnable(ScheduledExecutorService executor, int id) {
