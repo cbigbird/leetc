@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class P36 {
     public static void main(String[] args) {
@@ -37,9 +37,17 @@ public class P36 {
                 new char[]{'.','.','4','.','.','.','.','.','.'}
         };
         System.out.println();
-//        System.out.println(entity.isValidSudoku(arr1));
-//        System.out.println(entity.isValidSudoku(arr2));
+        System.out.println(entity.isValidSudoku(arr1));
+        System.out.println(entity.isValidSudoku(arr2));
         System.out.println(entity.isValidSudoku(arr3));
+        System.out.println();
+        System.out.println(entity.isValidSudoku2(arr1));
+        System.out.println(entity.isValidSudoku2(arr2));
+        System.out.println(entity.isValidSudoku2(arr3));
+        System.out.println();
+        System.out.println(entity.isValidSudoku3(arr1));
+        System.out.println(entity.isValidSudoku3(arr2));
+        System.out.println(entity.isValidSudoku3(arr3));
     }
 
     public boolean isValidSudoku(char[][] board) {
@@ -87,6 +95,44 @@ public class P36 {
             return false;
         } else {
             appears[num] = true;
+        }
+        return true;
+    }
+
+    public boolean isValidSudoku2(char[][] board) {
+        Map<String, Boolean> seen = new HashMap<>();
+        char c;
+        for (int i = 0; i < board.length; i ++) {
+            for (int j = 0; j < board[0].length; j ++) {
+                c = board[i][j];
+                if (c == '.') {
+                    // do nothing
+                } else if (seen.getOrDefault(c + "@row" + i, false)
+                        || seen.getOrDefault(c + "@col" + j, false)
+                        || seen.getOrDefault(c + "@box" + (i / 3) + "" + (j / 3), false)) {
+                    return false;
+                } else {
+                    seen.put(c + "@row" + i, true);
+                    seen.put(c + "@col" + j, true);
+                    seen.put(c + "@box" + (i / 3) + "" + (j / 3), true);
+                }
+            }
+        }
+        return true;
+    }
+
+    public boolean isValidSudoku3(char[][] board) {
+        Set<String> seen = new HashSet<>();
+        char c;
+        for (int i = 0; i < board.length; i ++) {
+            for (int j = 0; j < board[0].length; j ++) {
+                c = board[i][j];
+                if (c != '.' && !(seen.add(c + "@row" + i)
+                        && seen.add(c + "@col" + j)
+                        && seen.add(c + "@box" + (i / 3) + "" + (j / 3)))) {
+                    return false;
+                }
+            }
         }
         return true;
     }
