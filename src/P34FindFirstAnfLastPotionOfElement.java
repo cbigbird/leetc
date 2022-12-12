@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class P34 {
+public class P34FindFirstAnfLastPotionOfElement {
     public static void main(String[] args) {
-        P34 entity = new P34();
+        P34FindFirstAnfLastPotionOfElement entity = new P34FindFirstAnfLastPotionOfElement();
         System.out.println();
         int[] arr1 = new int[] {5,7,7,8,8,10};
         int[] arr2 = new int[] {5,7,7,8,8,10};

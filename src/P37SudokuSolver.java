@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class P37 {
+public class P37SudokuSolver {
     public static void main(String[] args) {
-        P37 entity = new P37();
+        P37SudokuSolver entity = new P37SudokuSolver();
         char[][] arr1 = new char[][]{
                 new char[]{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
                 new char[]{'6', '.', '.', '1', '9', '5', '.', '.', '.'},

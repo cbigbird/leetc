@@ -3,9 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class P30 { // Substring with Concatenation of All Words
+public class P30SubstringWithConcatenationOfAllWords { // Substring with Concatenation of All Words
     public static void main(String[] args) {
-        P30 entity = new P30();
+        P30SubstringWithConcatenationOfAllWords entity = new P30SubstringWithConcatenationOfAllWords();
         System.out.println();
         System.out.println(entity.findSubstring("barfoothefoobarman", new String[]{"foo","bar"}));
         System.out.println(entity.findSubstring("wordgoodgoodgoodbestword", new String[]{"word","good","best","word"}));

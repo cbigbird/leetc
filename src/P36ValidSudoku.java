@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class P36 {
+public class P36ValidSudoku {
     public static void main(String[] args) {
-        P36 entity = new P36();
+        P36ValidSudoku entity = new P36ValidSudoku();
         char[][] arr1 = new char[][]{
                 new char[]{'5','3','.','.','7','.','.','.','.'},
                 new char[]{'6','.','.','1','9','5','.','.','.'},

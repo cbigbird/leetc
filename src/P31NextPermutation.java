@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
-public class P31 { // Next Permutation
+public class P31NextPermutation { // Next Permutation
     public static void main(String[] args) {
         // [2,3,45,6,7,3]
-        P31 entity = new P31();
+        P31NextPermutation entity = new P31NextPermutation();
         int[] arr1 = new int[]{1,2,3};
         int[] arr2 = new int[]{3,2,1};
         int[] arr3 = new int[]{1,1,5};

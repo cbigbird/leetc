@@ -1,6 +1,6 @@
-public class P33 {
+public class P33SearchInRotatedSortedArray {
     public static void main(String[] args) {
-        P33 entity = new P33();
+        P33SearchInRotatedSortedArray entity = new P33SearchInRotatedSortedArray();
         int[] arr1 = new int[]{4,5,6,7,0,1,2};
         int[] arr2 = new int[]{4,5,6,7,0,1,2};
         int[] arr3 = new int[]{1};

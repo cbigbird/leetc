@@ -1,16 +1,15 @@
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
-import java.util.Objects;
 
-public class P32 { // Longest Valid Parentheses
+public class P32LongestValidParentheses { // Longest Valid Parentheses
     public static void main(String[] args) {
         String s1 = "";
         String s2 = "(()";
         String s3 = ")()())";
         String s4 = "((())))()()()(()(()()()()())";
         String s5 = ")))))))))";
-        P32 entity = new P32();
+        P32LongestValidParentheses entity = new P32LongestValidParentheses();
         System.out.println();
         System.out.println(entity.longestValidParentheses(s1));
         System.out.println(entity.longestValidParentheses(s2));

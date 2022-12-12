@@ -1,4 +1,4 @@
-public class P35 { // Search Insert Position
+public class P35SearchInsertPosition { // Search Insert Position
     public static void main(String[] args) {
         int[] arr1 = new int[]{1,3,5,6};
         int[] arr2 = new int[]{1,3,5,6};
@@ -8,7 +8,7 @@ public class P35 { // Search Insert Position
         int a2 = 2;
         int a3 = 7;
         int a4 = 2;
-        P35 entity = new P35();
+        P35SearchInsertPosition entity = new P35SearchInsertPosition();
         System.out.println();
         System.out.println(entity.searchInsert(arr1, a1));
         System.out.println(entity.searchInsert(arr2, a2));

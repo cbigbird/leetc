@@ -1,6 +1,6 @@
-public class P29 { // Divide Two Integers
+public class P29DivideTwoIntegers { // Divide Two Integers
     public static void main(String[] args) {
-        P29 entity = new P29();
+        P29DivideTwoIntegers entity = new P29DivideTwoIntegers();
         System.out.println(entity.divide(10, 3));
         System.out.println(entity.divide(7, -3));
         System.out.println(entity.divide(1, 1));
