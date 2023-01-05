@@ -1,6 +1,6 @@
-public class P45JumpGame {
+public class P45JumpGameII {
     public static void main(String[] args) {
-        P45JumpGame entity = new P45JumpGame();
+        P45JumpGameII entity = new P45JumpGameII();
         int[] arr1 = new int[]{2,3,1,1,4};
         int[] arr2 = new int[]{2,3,0,1,4};
         int[] arr3 = new int[]{0};
